@@ -9,19 +9,26 @@ body
 	font-size: 16px
 	min-width: 992px
 	font-family: $default-font
-	font-weight: 400	
+	font-weight: 400
 	margin: 0
 	background-color: #f5f5f7
 
-.no-js 
+.no-js
 	.slide
 		display: none
-	
+
 		&:first-of-type
 			display: block
-		
+
 		&__switch
 			display: none
+
+.hidden
+	width: 1px
+	height: 1px
+	position: absolute
+	left: -99999px
+	margin: -1px
 
 *::-webkit-input-placeholder
 	font-family: $futurabook
@@ -51,7 +58,6 @@ input[type="search"]::-webkit-search-results-decoration
 
 input[type="search"]::-ms-clear
 	display: none
-	
 
 .container
 	margin: 0 auto
@@ -72,10 +78,10 @@ input[type="search"]::-ms-clear
 		width: 1600px
 
 .slick
-	&-list 
+	&-list
 		overflow: hidden
-	
-	&-slide 
+
+	&-slide
 		float: left
 
 .content
@@ -120,10 +126,10 @@ input[type="search"]::-ms-clear
 		list-style-type: none
 		display: flex
 		margin: 0 20px 0 0
-	
+
 	&__item
 		padding: 0 20px
-	
+
 	&__link
 		font-weight: 600
 		color: $color
@@ -132,13 +138,13 @@ input[type="search"]::-ms-clear
 
 		&:hover
 			color: $accent
-	
+
 	&__button
 		border: 0
 		background-color: transparent
 		cursor: pointer
 		padding: 0
-	
+
 	&__menu
 		margin-left: 40px
 		margin-top: 8px
@@ -156,24 +162,24 @@ input[type="search"]::-ms-clear
 	padding-left: 40px
 	border-left: 1px solid rgba(#000000, .2)
 	margin-top: 6px
-		
+
 	&__btn
 		color: rgba(#333, .5)
 		text-decoration: none
 		font-weight: 600
 		margin-right: 16px
 		transition: color .2s ease-in-out
-		
+
 		&.active
 			color: #333
 			padding: 5px
 			background-color: rgba(#4A6424, .1)
 			border-radius: 5px
-		
+
 		&:hover
 			color: $accent
 
-.search	
+.search
 	&__wrap
 		display: none
 		padding-bottom: 9px
@@ -188,7 +194,7 @@ input[type="search"]::-ms-clear
 
 			.search__submit
 				border-left: 1px solid black
-			
+
 			.search__clear
 				border-right: 1px solid black
 
@@ -205,13 +211,12 @@ input[type="search"]::-ms-clear
 		&-svg
 			fill: $color
 			transition: fill .2s ease-in-out, transform .2s ease-in-out
-		
+
 		&:hover
 			.search__submit-svg
 				fill: $accent
 				transform: scale(1.08)
-			
-	
+
 	&__input
 		font-family: $futurabook
 		font-size: 18px
@@ -224,7 +229,7 @@ input[type="search"]::-ms-clear
 
 		&:focus
 			outline: none
-	
+
 	&__clear
 		border: 0
 		background-color: transparent
@@ -237,7 +242,7 @@ input[type="search"]::-ms-clear
 		&-svg
 			fill: $color
 			transition: fill .2s ease-in-out, transform .2s ease-in-out
-		
+
 		&:hover
 			.search__clear-svg
 				fill: $accent
@@ -248,12 +253,12 @@ input[type="search"]::-ms-clear
 		border-left: 1px solid rgba(#000000, .2)
 		border-right: 1px solid rgba(#000000, .2)
 		margin-top: 6px
-		
+
 		&-svg
 			fill: $color
 			transition: color .2s ease-in-out, transform .2s ease-in-out
 
-		&:hover	
+		&:hover
 			.search__button-svg
 				fill: $accent
 				transform: scale(1.2)
@@ -263,16 +268,15 @@ input[type="search"]::-ms-clear
 		height: 100vh
 		min-height: 600px
 		position: relative
-	
+
 	&__container
 		position: absolute
 		bottom: 27%
 		margin: 0 auto
 		left: 0
 		right: 0
-		
+
 		@media (min-height: 800px)
-			
 
 		@media (min-height: 900px)
 			bottom: 27%
@@ -282,29 +286,29 @@ input[type="search"]::-ms-clear
 
 	&__info
 		width: 635px
-	
+
 	&__title
 		font-weight: 700
-		font-size: 96px	
+		font-size: 96px
 		color: $accent
 		font-family: $playfair
 		margin-top: 0
 		margin-bottom: 16px
-	
+
 	&__cols
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-	
+
 	&__col
 		width: 45.4%
 		margin-bottom: 30px
-	
+
 	&__subtitle
 		font-weight: 600
 		font-size: 18px
 		color: $accent
-	
+
 	&__txt
 		font-family: $futurabook
 		line-height: 18px
@@ -323,7 +327,7 @@ input[type="search"]::-ms-clear
 
 		&-svg
 			fill: $accent
-		
+
 		&:hover
 			.slide__link-svg
 				opacity: .8
@@ -331,13 +335,13 @@ input[type="search"]::-ms-clear
 		&_read
 			background-color: #597D4E
 			border-radius: 5px
-			padding: 12px 56px	
+			padding: 12px 56px
 			color: #fff
 			position: relative
 			margin-right: 20px
 			border: 0.5px solid transparent
 			transition: opacity .2s ease-in-out
-			
+
 			&::after
 				content: ''
 				position: absolute
@@ -354,7 +358,7 @@ input[type="search"]::-ms-clear
 				opacity: .9
 				&::after
 					transform: rotate(0deg)
-		
+
 		&_view
 			color: $accent
 			display: flex
@@ -364,7 +368,7 @@ input[type="search"]::-ms-clear
 
 			&:hover
 				opacity: .8
-		
+
 		&-txt
 			margin-left: 3px
 
@@ -389,10 +393,10 @@ input[type="search"]::-ms-clear
 
 		&-prev
 			left: 38.4%
-		
+
 		&-next
 			left: 59.8%
-	
+
 .switch
 	&__page
 		font-family: $zilla
@@ -401,7 +405,7 @@ input[type="search"]::-ms-clear
 		position: absolute
 		z-index: 99999
 		bottom: 58px
-		
+
 	&__number
 		left: 41%
 
@@ -423,7 +427,7 @@ input[type="search"]::-ms-clear
 		padding: 0
 		display: flex
 		margin: 0
-	
+
 	&__item
 		margin-right: 35px
 
@@ -446,7 +450,7 @@ input[type="search"]::-ms-clear
 		left: 43.2%
 		bottom: 58px
 		border: 0
-		
+
 	&-2
 		width: 12.5%
 		height: 0.5px
@@ -456,7 +460,6 @@ input[type="search"]::-ms-clear
 		bottom: 58px
 		z-index: 99999
 		border: 0
-		
 
 .slick-slide.slick-active
 	animation: fastSwipeIn 1s both
@@ -473,7 +476,7 @@ input[type="search"]::-ms-clear
 	min-height: 600px
 	background: center/ cover no-repeat url('../img/bg-menu.jpg') #f3f3f3
 	position: relative
-	
+
 	&__close
 		background-color: transparent
 		border: 0
@@ -485,21 +488,21 @@ input[type="search"]::-ms-clear
 		&:hover
 			.menu__close-title
 				color: $accent
-			
+
 			.menu__close-svg
 				fill: $accent
 				transform: scale(1.2)
-	
+
 		&-title
 			font-weight: 600
 			color: #000
 			margin-right: 14px
 			transition: color .2s ease-in-out
-		
+
 		&-svg
 			fill: $color
 			transition: fill .2s ease-in-out, transform .2s ease-in-out
-		
+
 	&__nav
 		position: absolute
 		left: 0
@@ -507,7 +510,7 @@ input[type="search"]::-ms-clear
 		margin: 0 auto
 		bottom: 23.7%
 		width: fit-content
-		
+
 		@media (min-height: 900px)
 			bottom: 23.7%
 
@@ -521,7 +524,7 @@ input[type="search"]::-ms-clear
 				color: rgba($color, .4)
 				&:hover
 					color: $accent
-	
+
 	&__item
 		text-align: center
 		margin-bottom: 7%
@@ -533,32 +536,32 @@ input[type="search"]::-ms-clear
 
 		@media (min-height: 900px)
 			margin-bottom: 14.5%
-		
+
 		&:last-of-type
 			margin-bottom: 0
 
-	&__link	
+	&__link
 		font-family: $playfair
 		font-size: 48px
 		color: $color
-		text-decoration: none	
+		text-decoration: none
 		transition: color .2s ease-in-out
 
 		&::after
 			content: ''
 			width: 217px
-			box-shadow: 0 0 40px rgba(#464646, .4)	
+			box-shadow: 0 0 40px rgba(#464646, .4)
 			position: absolute
 
 		&:hover
 			&::after
 				animation: appearancePicture 800ms ease-in-out forwards
-		
+
 		&_about
 			&:hover
 				&:after
 					top: 0
-					background: center / cover no-repeat url('../img/about.jpg') #C4C4C4 
+					background: center / cover no-repeat url('../img/about.jpg') #C4C4C4
 					transform: rotate(5.66deg)
 					left: -270px
 
@@ -566,7 +569,7 @@ input[type="search"]::-ms-clear
 			&:hover
 				&:after
 					top: -50px
-					background: center / cover no-repeat url('../img/interior.jpg') #C4C4C4 
+					background: center / cover no-repeat url('../img/interior.jpg') #C4C4C4
 					transform: rotate(-5.66deg)
 					right: -270px
 
@@ -574,15 +577,15 @@ input[type="search"]::-ms-clear
 			&:hover
 				&:after
 					top: -100px
-					background: center / cover no-repeat url('../img/architecture.jpg') #C4C4C4 
+					background: center / cover no-repeat url('../img/architecture.jpg') #C4C4C4
 					transform: rotate(5.66deg)
 					left: -270px
-		
+
 		&_portfolio
 			&:hover
 				&:after
 					top: -150px
-					background: center / cover no-repeat url('../img/portfolio.jpg') #C4C4C4 
+					background: center / cover no-repeat url('../img/portfolio.jpg') #C4C4C4
 					transform: rotate(-5.66deg)
 					right: -270px
 
@@ -590,10 +593,10 @@ input[type="search"]::-ms-clear
 			&:hover
 				&:after
 					top: -200px
-					background: center / cover no-repeat url('../img/contact.jpg') #C4C4C4 
+					background: center / cover no-repeat url('../img/contact.jpg') #C4C4C4
 					transform: rotate(5.66deg)
 					left: -270px
-	
+
 	&__social
 		position: absolute
 		left: 0

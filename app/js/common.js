@@ -19,15 +19,15 @@ $(function () {
 	let info = document.getElementById('info');
 	let headerRight = document.getElementById('header-right');
 	let menuClose = document.getElementById('menu-close');
-	
-	menuOpen.onclick = function() {
+
+	menuOpen.onclick = function () {
 		menu.style.display = 'block';
 		info.style.display = 'none';
 		headerRight.style.display = 'none';
 		menuClose.style.display = 'flex';
 	}
 
-	menuClose.onclick = function() {
+	menuClose.onclick = function () {
 		menu.style.display = 'none';
 		info.style.display = 'block';
 		headerRight.style.display = 'flex';
@@ -39,13 +39,13 @@ $(function () {
 	let searchWrap = document.getElementById('search-wrap');
 	let closeSearch = document.getElementById('close-search');
 
-	searchButton.onclick = function() {
+	searchButton.onclick = function () {
 		headerNav.style.display = 'none';
 		searchButton.style.display = 'none';
 		searchWrap.style.display = 'flex';
 	}
 
-	closeSearch.onclick = function() {
+	closeSearch.onclick = function () {
 		headerNav.style.display = 'block';
 		searchButton.style.display = 'block';
 		searchWrap.style.display = 'none';
